@@ -1,5 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+// DONT NEED INTERFACES WHEN CREATING AN ABSTRACT CLASS
+// interface Sortable {
+//   length: number;
+//   compare(leftIndex: number, rightIndex: number): boolean;
+//   swap(leftIndex: number, rightIndex: number): void;
+// }
 var Sorter = /** @class */ (function () {
     function Sorter() {
     }

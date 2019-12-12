@@ -1,10 +1,11 @@
 import { NumbersCollection } from './numbers.collection';
 
-interface Sortable {
-  length: number;
-  compare(leftIndex: number, rightIndex: number): boolean;
-  swap(leftIndex: number, rightIndex: number): void;
-}
+// DONT NEED INTERFACES WHEN CREATING AN ABSTRACT CLASS
+// interface Sortable {
+//   length: number;
+//   compare(leftIndex: number, rightIndex: number): boolean;
+//   swap(leftIndex: number, rightIndex: number): void;
+// }
 
 export abstract class Sorter {
   // abstract is signifying that a child will promise to have these methods
