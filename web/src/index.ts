@@ -1,8 +1,10 @@
 import { User } from './models/user';
+import axios from 'axios';
 
-const user = new User({ name: 'MyName', age: 20 });
+const user = new User({ id: 1 });
 
-user.set({ name: 'newName' });
+user.fetch();
 
-console.log(user.get('name'));
-console.log(user.get('age'));
+setTimeout(() => {
+  console.log(user);
+}, 4000);
